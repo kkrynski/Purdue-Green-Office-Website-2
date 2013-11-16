@@ -13,8 +13,7 @@
     <link href="../../dist/css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="jumbotron.css" rel="stylesheet">
-    <link href="mystyle2.css" rel="stylesheet">
+    <link href="../style.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -24,8 +23,9 @@
   </head>
 
   <body>
+    <div class="header"></div>
 
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar navbar-inverse">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -36,12 +36,21 @@
           <a class="navbar-brand"></a>
         </div>
         <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="../index.html">Home</a></li>
-            <li class="active"><a href="certification.html">Certification</a></li>
-            <li><a href="../evaluation/evaluation.html">Evaluation</a></li>
-	    <li><a href="../improvement/improvement.html">Improvement</a></li>
-	    <li><a href="../aboutus/aboutus.html">About Us</a></li>
+       <ul class="nav navbar-nav">
+            <li><a href="../">Home</a></li>
+            <li><a href="../certification/">Certification</a></li>
+              
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Evaluation <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="../evaluation/">Rankings</a></li>
+                <li><a href="../evaluation/categories.html">Categories</a></li>
+              </ul>
+            </li>
+              
+	        <li class="active"><a href="../improvement/">Improvement</a></li>
+	        <li><a href="../about-us/">About Us</a></li>
+              
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Toolkit <b class="caret"></b></a>
               <ul class="dropdown-menu">
@@ -70,14 +79,6 @@
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="container">
-      <div class="row">
-	<h2> Video Area </h2>
-      </div>
-
-      <div class="row">
-	<p> The certification process is simple. </p>
-      </div>
-
       <hr> </hr>
 
       <footer>

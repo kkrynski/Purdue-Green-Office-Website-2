@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="../Kirti/PGO.png">
+    <link rel="shortcut icon" href="../Kirti/green-office-icon.png">
 
     <title>Purdue Green Office</title>
 
@@ -13,8 +13,7 @@
     <link href="../dist/css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="jumbotron.css" rel="stylesheet">
-    <link href="mystyle2.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -24,8 +23,9 @@
   </head>
 
   <body>
-
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="header"></div>
+      
+    <div class="navbar navbar-inverse">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -37,11 +37,20 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="certification/certification.html">Certification</a></li>
-            <li><a href="evaluation/evaluation.html">Evaluation</a></li>
-	    <li><a href="improvement/improvement.html">Improvement</a></li>
-	    <li><a href="aboutus/aboutus.html">About Us</a></li>
+            <li class="active"><a href="./">Home</a></li>
+            <li><a href="./certification/">Certification</a></li>
+              
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Evaluation <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="./evaluation/">Rankings</a></li>
+                <li><a href="./evaluation/categories.html">Categories</a></li>
+              </ul>
+            </li>
+              
+	        <li><a href="./improvement/">Improvement</a></li>
+	        <li><a href="./about-us/">About Us</a></li>
+              
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Toolkit <b class="caret"></b></a>
               <ul class="dropdown-menu">
@@ -69,18 +78,35 @@
     </div>
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <div class="container">
-        <h1>Purdue Green Office</h1>
-        <p>Encouraging sustainable practices within Purdue for the benefit of a clean, green culture.</p>
-        <p><a class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-      </div>
+    <div>
+        <div id="carousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel" data-slide-to="1"></li>
+            <li data-target="#carousel" data-slide-to="2"></li>
+          </ol>
+        
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="../Kirti/green-roof-plants.jpg" alt="green roof plants">
+            </div>
+              <div class="item">
+              <img src="../Kirti/MSEE.jpg" alt="MSEE Purdue">
+            </div>
+          </div>
+        
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a class="right carousel-control" href="#carousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+        </div>
     </div>
-    <div class="spanner">
-    </div>
-    <div class="main-head">
-        <h3> Quick Guide to Certification </h3>
-    </div>
+
     <div class="container">
       <!-- Example row of columns -->
       <div class="row">
@@ -110,7 +136,7 @@
       <hr>
 
       <footer>
-        <p>&copy; sgscProductions 2013</p>
+        <p>&copy; SGSC 2013</p>
       </footer>
     </div> <!-- /container -->
 

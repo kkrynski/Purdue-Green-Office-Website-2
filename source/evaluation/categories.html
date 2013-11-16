@@ -13,8 +13,7 @@
     <link href="../../dist/css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="jumbotron.css" rel="stylesheet">
-    <link href="mystyle2.css" rel="stylesheet">
+    <link href="../style.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -24,8 +23,9 @@
   </head>
 
   <body>
-
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="header"></div>
+      
+    <div class="navbar navbar-inverse">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -37,11 +37,20 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../certification/certification.html">Certification</a></li>
-            <li class="active"><a href="evaluation.html">Evaluation</a></li>
-	    <li><a href="../improvement/improvement.html">Improvement</a></li>
-	    <li><a href="../aboutus/aboutus.html">About Us</a></li>
+            <li><a href="../">Home</a></li>
+            <li><a href="../certification/">Certification</a></li>
+              
+            <li class="active dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Evaluation <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="../evaluation/">Rankings</a></li>
+                <li><a href="../evaluation/categories.html">Categories</a></li>
+              </ul>
+            </li>
+              
+	        <li><a href="../improvement/">Improvement</a></li>
+	        <li><a href="../about-us/">About Us</a></li>
+              
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Toolkit <b class="caret"></b></a>
               <ul class="dropdown-menu">
@@ -71,26 +80,17 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="container marketing">
 
-      <div class="row" id="main-head">
-	<div class="col-lg-4" id="first">
-	  <a href="evaluation.html" class="active"> <h3> Our Point System </h3> </a>
-	</div>
-	<div class="col-lg-4">
-	  <a href="evaluation-cat.html"> <h3> Categories </h3> </a>
-	</div>
-      </div>
-
       <!-- START THE FEATURETTES -->
 
       <hr class="featurette-divider" id="top">
 
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading"> Black <span class="text-muted"> Mild sustainability. </span></h2>
+          <h2 class="featurette-heading"> Waste/Recycling <span class="text-muted">  </span></h2>
           <p class="lead"> Earning a certification level of Black means that your office is somewhat sustainable, but could use improvement. </p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="../../Kirti/Green-Office-Program-Logo-Black_10.gif" data-src="holder.js/500x500/auto" alt="Black Leaf">
+          <img class="featurette-image img-responsive" src="waste.jpg" data-src="holder.js/500x500/auto" alt="Black Leaf">
         </div>
       </div>
 
@@ -98,10 +98,10 @@
 
       <div class="row featurette">
         <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="../../Kirti/Green-Office-Program-Logo-Gold_06.gif" data-src="holder.js/500x500/auto" alt="Gold Leaf">
+          <img class="featurette-image img-responsive" src="energy.jpg" data-src="holder.js/500x500/auto" alt="Gold Leaf">
         </div>
         <div class="col-md-7">
-          <h2 class="featurette-heading"> Gold <span class="text-muted"> Adaquate sustainability. </span></h2>
+          <h2 class="featurette-heading"> Energy <span class="text-muted"> </span></h2>
           <p class="lead"> Earning a certification level of Gold means that your office is at an acceptable sustainability level, but there is still room for improvement. </p>
         </div>
       </div>
@@ -110,12 +110,49 @@
 
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading"> Green <span class="text-muted"> Exceptionally sustainable. </span></h2>
+          <h2 class="featurette-heading"> Water <span class="text-muted"> </span></h2>
           <p class="lead"> Earning a certification level of Green means that your office is above and beyond the sustainability requirements for Purdue. Keep up the good
 	  practices. </p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="../../Kirti/Green-Office-Program-Logo-Green_07.gif" data-src="holder.js/500x500/auto" alt="Green Leaf">
+          <img class="featurette-image img-responsive" src="water.jpg" data-src="holder.js/500x500/auto" alt="Green Leaf">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="air.svg" data-src="holder.js/500x500/auto" alt="Gold Leaf">
+        </div>
+        <div class="col-md-7">
+          <h2 class="featurette-heading"> Indoor Air Quality and Human Health <span class="text-muted"> </span></h2>
+          <p class="lead"> Earning a certification level of Gold means that your office is at an acceptable sustainability level, but there is still room for improvement. </p>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading"> Transportation <span class="text-muted"> </span></h2>
+          <p class="lead"> Earning a certification level of Green means that your office is above and beyond the sustainability requirements for Purdue. Keep up the good
+          practices. </p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="trans.jpg" data-src="holder.js/500x500/auto" alt="Green Leaf">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="community.jpg" data-src="holder.js/500x500/auto" alt="Gold Leaf">
+        </div>
+        <div class="col-md-7">
+          <h2 class="featurette-heading"> Involvement <span class="text-muted"> </span></h2>
+          <p class="lead"> Earning a certification level of Gold means that your office is at an acceptable sustainability level, but there is still room for improvement. </p>
         </div>
       </div>
 

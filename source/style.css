@@ -1,0 +1,80 @@
+div.navbar.navbar-inverse {
+	background-color: rgb(92, 135, 39);
+    border-radius: 0;
+    margin-bottom: 0;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+	color: rgb(230, 230, 230);
+}
+
+.navbar-inverse .navbar-brand {
+	color: rgb(230, 230, 230);
+	background-image: url('../Kirti/PGO.png');
+	background-size: cover;
+	min-height: 50px;
+	margin-right: 10px;
+}
+
+.navbar-inverse .navbar-nav > .dropdown > a .caret {
+	color: rgb(230, 230, 230);
+	border-top-color: rgb(230, 230, 230);
+	border-bottom-color: rgb(230, 230, 230);
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > 
+.active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+	color: white;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+	background: rgba(0, 0, 0, 0.2);
+}
+
+.container .btn {
+	margin-top: 10px;
+}
+
+div.col-lg-4 {
+	background-color: white; /*rgba(92, 135, 39, 1)*/ /*rgb(209, 211, 212)*/ 
+	color: rgba(0, 0, 0, 0.8); /*white*/ 
+	width: 350px;
+	border-radius: 10px;
+	margin: 40px 0px;
+	text-align: center;
+}
+
+#middle-d {
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+div.col-lg-4 a.btn.btn-default {
+	background-color: rgba(0, 0, 0, 0.5);
+	border-color: rgba(0, 0, 0, 0);
+	color: white;
+}
+
+div.col-lg-4 a.btn-default:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+div.col-lg-4 img {
+	margin: 5px;
+	height: 150px;
+	width: 150px;
+}
+
+.carousel-inner {
+    height: 400px;
+}
+
+.header {
+    background: url(../Kirti/green-office-logo.jpg) left center no-repeat;
+    height: 120px;
+    padding: 10px 0px;
+}
