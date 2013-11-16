@@ -1,5 +1,4 @@
 div.navbar.navbar-inverse {
-	background-color: rgb(92, 135, 39);
     border-radius: 0;
     margin-bottom: 0;
     border-left: none;
@@ -77,4 +76,26 @@ div.col-lg-4 img {
     background: url(../Kirti/green-office-logo.jpg) left center no-repeat;
     height: 120px;
     padding: 10px 0px;
+}
+
+.col-lg-4.first {
+  margin-left: 100px;  
+}
+
+.col-lg-4.second {
+    margin-left: 250px;
+}
+
+.spanner {
+    height: 20px;
+    background: #222222;
+}
+
+h1 {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+hr {
+    width: 90%;
 }
